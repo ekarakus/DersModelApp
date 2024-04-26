@@ -15,6 +15,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Ders ders = new Ders();
+        ders.Ad="Web";
+        ders.Seviye=11;
+        ders.Ogretmen="Ergün Karakuş";
         return View();
     }
 
